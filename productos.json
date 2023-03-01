@@ -14,5 +14,13 @@
 		"Descript": 100,
 		"Precio": "No Image",
 		"Foto": 25
+	},
+	{
+		"Id": 3,
+		"Name": "KIWI",
+		"Stock": "MARRON",
+		"Descript": 100,
+		"Precio": "No Image",
+		"Foto": 25
 	}
 ]

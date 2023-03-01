@@ -5,7 +5,6 @@ export default class ProductsPrin {
     this.products = [];
     this.path = "./productos.json";
   }
-
   addProduct = async (Id, Name, Stock, Descript, Precio, Foto) => {
     const productIndex = this.products.findIndex(
       (product) => product.Id === Id
@@ -17,7 +16,7 @@ export default class ProductsPrin {
     if (productIndex === -1) {
       const product = {
         Id: this.products.length + 1,
-        Name,
+        Name, 
         Stock,
         Descript,
         Precio,
@@ -29,6 +28,7 @@ export default class ProductsPrin {
         JSON.stringify(this.products, null, "\t")
       );
     } else {
+      product.id = product[product.length - 1].id + 1
       console.log(`Producto con mismo  ${Id}`);
     }
   };
@@ -79,7 +79,7 @@ export default class ProductsPrin {
         const products = await this.getProducts();
 
         if (products === "error") {
-            return "The file is empty";
+            return "El archivo esta vacio";
         }
 
 
@@ -102,11 +102,10 @@ export default class ProductsPrin {
 
             //console.log(this.products)
             await fs.promises.writeFile(this.path, JSON.stringify(products, null, "\t"));
-            return "Product updated";
-
+            return "Producto actualizado";
 
         } else {
-            return `The product to update with the id ${Id} does not exist in the list`;
+            return `El producto a actualizar con el id ${Id} no existe en la lista`;
         }
     } catch (error) {
         console.log(error)
