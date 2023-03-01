@@ -1,0 +1,21 @@
+{
+  "name": "primer-entregable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Manejodearchivos.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lautaax/Primer-entregable.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lautaax/Primer-entregable/issues"
+  },
+  "homepage": "https://github.com/Lautaax/Primer-entregable#readme"
+}

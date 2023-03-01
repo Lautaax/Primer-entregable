@@ -1,0 +1,18 @@
+[
+	{
+		"Id": 1,
+		"Name": "Pera",
+		"Stock": "verde y roja",
+		"Descript": 200,
+		"Precio": "No Image",
+		"Foto": 50
+	},
+	{
+		"Id": 2,
+		"Name": "KIWI",
+		"Stock": "MARRON",
+		"Descript": 100,
+		"Precio": "No Image",
+		"Foto": 25
+	}
+]

@@ -1,11 +1,15 @@
+import fs from "fs";
 
 class ProductsPrin {
   constructor() {
     this.products = [];
+    this.path = "./productos.json";
   }
 
+  
 
-addProduct = (Id, Name, Stock, Descript, Precio, Foto) => {
+
+addProduct = async (Id, Name, Stock, Descript, Precio, Foto) => {
   const productIndex = this.products.findIndex((product) => product.Id === Id);
   if (!Id || !Name || !Stock || !Descript || !Precio || !Foto) {
     console.log("Error datos iguales");
@@ -18,10 +22,10 @@ addProduct = (Id, Name, Stock, Descript, Precio, Foto) => {
       Stock,
       Descript,
       Precio,
-      Image,
+      Foto,
     };
     this.products.push(product);
-    console.log(`Su Producto ${Id} Fue agregado`);
+    await fs.promises.writeFile(this.path, JSON.stringify(this.products,null,"\t"))
   } else {
     console.log(`Producto con mismo  ${Id}`);
   }
@@ -42,7 +46,9 @@ addProduct = (Id, Name, Stock, Descript, Precio, Foto) => {
       console.log(this.products[productsIdFound]);
     }
   };
+
 }
+
 
 
 //Productos
