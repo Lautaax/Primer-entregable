@@ -1,26 +1,82 @@
 [
 	{
-		"Id": 1,
-		"Name": "Pera",
-		"Stock": "verde y roja",
-		"Descript": 200,
-		"Precio": "No Image",
-		"Foto": 50
+		"id": 1,
+		"usuario": "sandia",
+		"stock": 20,
+		"descript": "verde y roja",
+		"precio": 50,
+		"foto": "no image"
 	},
 	{
-		"Id": 2,
-		"Name": "KIWI",
-		"Stock": "MARRON",
-		"Descript": 100,
-		"Precio": "No Image",
-		"Foto": 25
+		"id": 2,
+		"usuario": "kiwi",
+		"stock": 2,
+		"descript": "verde",
+		"precio": 30,
+		"foto": "no image"
 	},
 	{
-		"Id": 3,
-		"Name": "KIWI",
-		"Stock": "MARRON",
-		"Descript": 100,
-		"Precio": "No Image",
-		"Foto": 25
+		"id": 3,
+		"usuario": "banana",
+		"stock": 5,
+		"descript": "marron",
+		"precio": 14,
+		"foto": "no image"
+	},
+	{
+		"id": 4,
+		"usuario": "manzana",
+		"stock": 5,
+		"descript": "verde",
+		"precio": 14,
+		"foto": "no image"
+	},
+	{
+		"id": 5,
+		"usuario": "manzana",
+		"stock": 5,
+		"descript": "roja",
+		"precio": 14,
+		"foto": "no image"
+	},
+	{
+		"id": 6,
+		"usuario": "mandarina",
+		"stock": 5,
+		"descript": "naranja",
+		"precio": 14,
+		"foto": "no image"
+	},
+	{
+		"id": 7,
+		"usuario": "lechuga",
+		"stock": 5,
+		"descript": "verde",
+		"precio": 14,
+		"foto": "no image"
+	},
+	{
+		"id": 8,
+		"usuario": "palta",
+		"stock": 5,
+		"descript": "verde",
+		"precio": 14,
+		"foto": "no image"
+	},
+	{
+		"id": 9,
+		"usuario": "cebolla",
+		"stock": 5,
+		"descript": "marron",
+		"precio": 14,
+		"foto": "no image"
+	},
+	{
+		"id": 10,
+		"usuario": "papa",
+		"stock": 5,
+		"descript": "marron",
+		"precio": 14,
+		"foto": "no image"
 	}
 ]
